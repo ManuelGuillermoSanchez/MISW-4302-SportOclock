@@ -10,6 +10,8 @@ import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.example.sportoclock.databinding.ActivityLoginBinding
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 
 class LoginActivity : ComponentActivity() {
 
@@ -20,6 +22,7 @@ class LoginActivity : ComponentActivity() {
     private lateinit var passwordInputLayout: TextInputLayout
     private lateinit var usernameErrorText: TextView
     private lateinit var passwordErrorText: TextView
+    private lateinit var recoverPasswordButton: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +36,7 @@ class LoginActivity : ComponentActivity() {
         passwordInputLayout = findViewById(R.id.passwordInputLayout)
         usernameErrorText = findViewById(R.id.usernameErrorText)
         passwordErrorText = findViewById(R.id.passwordErrorText)
+        recoverPasswordButton = findViewById(R.id.recoverPassword)
 
         // Login button logic with validation
         loginButton.setOnClickListener {
@@ -51,7 +55,7 @@ class LoginActivity : ComponentActivity() {
             if (username.isEmpty()) {
                 userInputLayout.isErrorEnabled = true
                 userInputLayout.error = "Campo obligatorio"
-                usernameErrorText.visibility = TextView.VISIBLE
+                // usernameErrorText.visibility = TextView.VISIBLE
                 valid = false
             }
 
@@ -59,7 +63,7 @@ class LoginActivity : ComponentActivity() {
             if (password.isEmpty()) {
                 passwordInputLayout.isErrorEnabled = true
                 passwordInputLayout.error = "Campo obligatorio"
-                passwordErrorText.visibility = TextView.VISIBLE
+                // passwordErrorText.visibility = TextView.VISIBLE
                 valid = false
             }
 
@@ -70,5 +74,43 @@ class LoginActivity : ComponentActivity() {
                 finish() // Finish LoginActivity so the user can't go back
             }
         }
+
+        // Open modal dialog when clicking on recover password button
+        recoverPasswordButton.setOnClickListener {
+            showRecoverPasswordDialog()
+        }
+
+    }
+
+
+    private fun showRecoverPasswordDialog() {
+        // Create an AlertDialog
+        val dialogView = layoutInflater.inflate(R.layout.dialog_recover_password, null)
+        val emailInput = dialogView.findViewById<TextInputEditText>(R.id.emailInput)
+        val emailInputLayout = dialogView.findViewById<TextInputLayout>(R.id.emailInputLayout)
+        val sendButton = dialogView.findViewById<MaterialButton>(R.id.sendButton)
+
+        val dialog = AlertDialog.Builder(this)
+            .setTitle("Recuperar contraseña")
+            .setView(dialogView)
+            .setCancelable(true)
+            .create()
+
+        sendButton.setOnClickListener {
+            val email = emailInput.text.toString()
+
+            // Validate email input
+            if (email.isEmpty()) {
+                emailInputLayout.error = "Campo obligatorio"
+            } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                emailInputLayout.error = "Correo electrónico no válido"
+            } else {
+                // Show success message and close dialog
+                Toast.makeText(this, "Correo de recuperación enviado", Toast.LENGTH_SHORT).show()
+                dialog.dismiss()
+            }
+        }
+
+        dialog.show()
     }
 }

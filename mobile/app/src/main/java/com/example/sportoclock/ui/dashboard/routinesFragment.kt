@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.sportoclock.databinding.FragmentDashboardBinding
+import com.example.sportoclock.databinding.FragmentRoutinesBinding
 
-class DashboardFragment : Fragment() {
+class routinesFragment : Fragment() {
 
-private var _binding: FragmentDashboardBinding? = null
+private var _binding: FragmentRoutinesBinding? = null
   // This property is only valid between onCreateView and
   // onDestroyView.
   private val binding get() = _binding!!
@@ -24,7 +24,7 @@ private var _binding: FragmentDashboardBinding? = null
     val dashboardViewModel =
             ViewModelProvider(this).get(DashboardViewModel::class.java)
 
-    _binding = FragmentDashboardBinding.inflate(inflater, container, false)
+    _binding = FragmentRoutinesBinding.inflate(inflater, container, false)
     val root: View = binding.root
 
     val textView: TextView = binding.textDashboard
