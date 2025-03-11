@@ -1,16 +1,27 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Theme.SportOclock" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+<resources>
+    <style name="Theme.SportOclock." parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/manrope_regular</item>  <!-- Para Manrope Regular -->
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="TitleText">
+        <item name="android:fontFamily">@font/manrope_bold</item> <!-- Para Manrope Bold -->
+        <item name="android:textSize">36sp</item>
+        <item name="android:lineSpacingExtra">45sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SubtitleText">
+        <item name="android:fontFamily">@font/sans_pro_regular</item> <!-- Para Source Sans Pro Regular -->
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">25sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="BodyText">
+        <item name="android:fontFamily">@font/orbitron_bold</item> <!-- Para Orbitron Bold -->
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">20sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>
