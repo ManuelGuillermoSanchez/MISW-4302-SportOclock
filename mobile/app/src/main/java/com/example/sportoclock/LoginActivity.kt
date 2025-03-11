@@ -23,6 +23,8 @@ class LoginActivity : ComponentActivity() {
     private lateinit var usernameErrorText: TextView
     private lateinit var passwordErrorText: TextView
     private lateinit var recoverPasswordButton: TextView
+    private lateinit var googleLoginButton: MaterialButton
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +39,7 @@ class LoginActivity : ComponentActivity() {
         usernameErrorText = findViewById(R.id.usernameErrorText)
         passwordErrorText = findViewById(R.id.passwordErrorText)
         recoverPasswordButton = findViewById(R.id.recoverPassword)
+        googleLoginButton = findViewById(R.id.googleLoginButton)
 
         // Login button logic with validation
         loginButton.setOnClickListener {
@@ -80,6 +83,11 @@ class LoginActivity : ComponentActivity() {
             showRecoverPasswordDialog()
         }
 
+        // Open modal dialog when clicking on "Iniciar con Google" button
+        googleLoginButton.setOnClickListener {
+            showGoogleLoginConfirmationDialog()
+        }
+
     }
 
 
@@ -109,6 +117,27 @@ class LoginActivity : ComponentActivity() {
                 Toast.makeText(this, "Correo de recuperación enviado", Toast.LENGTH_SHORT).show()
                 dialog.dismiss()
             }
+        }
+
+        dialog.show()
+    }
+
+    private fun showGoogleLoginConfirmationDialog() {
+        // Create an AlertDialog for Google Login confirmation
+        val dialogView = layoutInflater.inflate(R.layout.dialog_confirmation, null)
+        val acceptButton = dialogView.findViewById<MaterialButton>(R.id.acceptButton)
+
+        val dialog = AlertDialog.Builder(this)
+            .setView(dialogView)
+            .setCancelable(false)
+            .create()
+
+        acceptButton.setOnClickListener {
+            // After confirmation, redirect to MainActivity
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish() // Close the login activity
+            dialog.dismiss()
         }
 
         dialog.show()
