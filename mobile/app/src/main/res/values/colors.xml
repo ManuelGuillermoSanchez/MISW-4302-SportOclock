@@ -11,8 +11,6 @@
     <color name="colorLightBlue">#EAF7FF</color>
 
     <!-- Agregar colores faltantes -->
-    <color name="purple_200">#BB86FC</color>
-    <color name="purple_700">#3700B3</color>
     <color name="teal_200">#03DAC5</color>
 
 </resources>

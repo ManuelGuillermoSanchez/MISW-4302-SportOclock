@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sportclock.ui.LoginActivity">
+    tools:context="com.example.sportclock.LoginActivity">
 
     <!-- Título "Iniciar sesión" -->
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Iniciar Sesion"
+        android:text="@string/title_iniciar_sesion"
         android:textSize="32sp"
         android:textStyle="bold"
         android:layout_marginTop="100dp"
@@ -33,7 +33,7 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Escribe tu usuario"
+            android:hint="@string/placeholder_iniciar_sesion"
             android:inputType="text"
             android:textColorHint="@color/colorGray" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -43,7 +43,7 @@
         android:id="@+id/usernameErrorText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Completa este campo"
+        android:text="@string/error_label"
         android:textColor="@color/colorRed"
         android:visibility="gone"
         android:layout_marginTop="8dp"
@@ -65,7 +65,7 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Escribe tu contraseña"
+            android:hint="@string/title_password"
             android:inputType="textPassword"
             android:textColorHint="@color/colorGray" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -76,7 +76,7 @@
         android:id="@+id/passwordErrorText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Completa este campo"
+        android:text="@string/error_label"
         android:textColor="@color/colorRed"
         android:visibility="gone"
         android:layout_marginTop="8dp"
@@ -89,7 +89,7 @@
         android:id="@+id/recoverPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Recuperar contraseña"
+        android:text="@string/recover_password"
         android:textSize="14sp"
         android:textColor="@color/colorBlue"
         app:layout_constraintTop_toBottomOf="@id/passwordInputLayout"
@@ -102,7 +102,7 @@
         android:id="@+id/loginButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Iniciar sesión"
+        android:text="@string/title_iniciar_sesion"
         app:layout_constraintTop_toBottomOf="@id/recoverPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,7 +114,7 @@
         android:id="@+id/googleLoginButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Iniciar con Google"
+        android:text="@string/goggle_iniciar_sesion"
         app:layout_constraintTop_toBottomOf="@id/loginButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -126,7 +126,7 @@
         android:id="@+id/createAccountButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Crear cuenta"
+        android:text="@string/title_crear_cuenta"
         app:layout_constraintTop_toBottomOf="@id/googleLoginButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
