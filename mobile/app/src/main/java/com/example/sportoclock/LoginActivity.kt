@@ -12,6 +12,7 @@ import com.google.android.material.textfield.TextInputLayout
 import com.example.sportoclock.databinding.ActivityLoginBinding
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import com.example.sportoclock.CreateAccountActivity
 
 class LoginActivity : ComponentActivity() {
 
@@ -24,6 +25,7 @@ class LoginActivity : ComponentActivity() {
     private lateinit var passwordErrorText: TextView
     private lateinit var recoverPasswordButton: TextView
     private lateinit var googleLoginButton: MaterialButton
+    private lateinit var createAccountButton: MaterialButton
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,6 +42,7 @@ class LoginActivity : ComponentActivity() {
         passwordErrorText = findViewById(R.id.passwordErrorText)
         recoverPasswordButton = findViewById(R.id.recoverPassword)
         googleLoginButton = findViewById(R.id.googleLoginButton)
+        createAccountButton = findViewById(R.id.createAccountButton)
 
         // Login button logic with validation
         loginButton.setOnClickListener {
@@ -86,6 +89,12 @@ class LoginActivity : ComponentActivity() {
         // Open modal dialog when clicking on "Iniciar con Google" button
         googleLoginButton.setOnClickListener {
             showGoogleLoginConfirmationDialog()
+        }
+
+        // Redirect to Create Account activity when clicking on "Crear cuenta"
+        createAccountButton.setOnClickListener {
+            val intent = Intent(this, CreateAccountActivity::class.java)
+            startActivity(intent)
         }
 
     }

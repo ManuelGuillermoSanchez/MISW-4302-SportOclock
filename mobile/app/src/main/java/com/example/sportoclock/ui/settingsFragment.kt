@@ -10,12 +10,12 @@ import android.widget.Toast
 import com.google.android.material.switchmaterial.SwitchMaterial
 import androidx.fragment.app.Fragment
 import com.example.sportclock.LoginActivity
-import com.example.sportoclock.databinding.FragmentNotificationsBinding
+import com.example.sportoclock.databinding.FragmentSettingsBinding
 
 
-class NotificationsFragment : Fragment() {
+class settingsFragment : Fragment() {
 
-    private var _binding: FragmentNotificationsBinding? = null
+    private var _binding: FragmentSettingsBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -23,7 +23,7 @@ class NotificationsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflar el layout con ViewBinding
-        _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
+        _binding = FragmentSettingsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
 
