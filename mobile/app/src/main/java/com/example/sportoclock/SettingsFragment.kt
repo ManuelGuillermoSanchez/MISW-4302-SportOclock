@@ -1,4 +1,4 @@
-package com.example.sportoclock.ui
+package com.example.sportoclock
 
 import android.content.Intent
 import android.os.Bundle
@@ -13,7 +13,7 @@ import com.example.sportclock.LoginActivity
 import com.example.sportoclock.databinding.FragmentSettingsBinding
 
 
-class settingsFragment : Fragment() {
+class SettingsFragment : Fragment() {
 
     private var _binding: FragmentSettingsBinding? = null
     private val binding get() = _binding!!

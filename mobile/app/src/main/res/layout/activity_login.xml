@@ -14,25 +14,24 @@
         android:text="@string/title_iniciar_sesion"
         android:textSize="32sp"
         android:textStyle="bold"
-        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp" />
 
     <!-- Campo de texto para el Usuario -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/userInputLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="328dp"
+        android:layout_height="60dp"
         app:layout_constraintTop_toBottomOf="@id/title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="40dp">
-
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/username"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:hint="@string/placeholder_iniciar_sesion"
             android:inputType="text"
             android:textColorHint="@color/colorGray" />
@@ -54,24 +53,23 @@
     <!-- Campo de texto para la Contraseña -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordInputLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/userInputLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp">
+        android:layout_width="328dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toBottomOf="@id/userInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/title_password"
-            android:inputType="textPassword"
-            android:textColorHint="@color/colorGray" />
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/title_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorGray" />
     </com.google.android.material.textfield.TextInputLayout>
 
-
-    <!-- Mensaje de error para la Contraseña -->
+        <!-- Mensaje de error para la Contraseña -->
     <TextView
         android:id="@+id/passwordErrorText"
         android:layout_width="wrap_content"
@@ -84,35 +82,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Botón Recuperar contraseña -->
+        <!-- Botón Recuperar contraseña -->
     <TextView
         android:id="@+id/recoverPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="@string/recover_password"
-        android:textSize="14sp"
         android:textColor="@color/colorBlue"
-        app:layout_constraintTop_toBottomOf="@id/passwordInputLayout"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="10dp"/>
+        app:layout_constraintTop_toBottomOf="@id/passwordInputLayout" />
 
     <!-- Botón Iniciar sesión -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/loginButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/title_iniciar_sesion"
-        app:layout_constraintTop_toBottomOf="@id/recoverPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="@color/colorBlue"/>
+        android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:text="@string/title_iniciar_sesion"
+            app:layout_constraintTop_toBottomOf="@id/recoverPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/colorBlue"/>
 
-    <!-- Botón Iniciar con Google -->
+        <!-- Botón Iniciar con Google -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/googleLoginButton"
-        android:layout_width="0dp"
+        android:layout_width="328dp"
         android:layout_height="wrap_content"
         android:text="@string/goggle_iniciar_sesion"
         app:layout_constraintTop_toBottomOf="@id/loginButton"
@@ -121,17 +120,15 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/colorGreen"/>
 
-    <!-- Botón Crear cuenta -->
-    <com.google.android.material.button.MaterialButton
+            <!-- Botón Crear cuenta -->
+        <com.google.android.material.button.MaterialButton
         android:id="@+id/createAccountButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/title_crear_cuenta"
-        app:layout_constraintTop_toBottomOf="@id/googleLoginButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/colorGray"/>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/title_crear_cuenta"
+            app:layout_constraintTop_toBottomOf="@id/googleLoginButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/colorGray"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
