@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'SportOclock-Web';
+  isSelected(route: string): boolean {
+    return window.location.pathname === route;
+  }
 }
+

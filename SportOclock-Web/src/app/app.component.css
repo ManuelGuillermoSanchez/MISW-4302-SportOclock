@@ -1,0 +1,45 @@
+/* Barra lateral */
+.sidenav {
+    width: 250px;
+    background-color: #EAF7FF;  /* Azul claro para la barra lateral */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  /* Estilo para los íconos en la barra lateral */
+  .sidenav .mat-icon {
+    font-size: 36px;  /* Aumenta el tamaño de los íconos */
+    margin-bottom: 10px;  /* Espacio entre el ícono y el texto */
+  }
+  
+  /* Elementos de la barra lateral */
+  .sidenav .mat-list-item {
+    font-size: 18px;
+    color: #FFFFFF;  /* Texto blanco para los ítems */
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;  /* Organiza el ícono y el texto uno encima del otro */
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Barra lateral: Hover en elementos no seleccionados */
+  .sidenav .mat-list-item:hover {
+    background-color: #0057FF;  /* Azul más oscuro al pasar el ratón */
+    cursor: pointer;  /* Cambia el cursor para indicar interactividad */
+  }
+  
+  /* Barra lateral: Elemento seleccionado */
+  .sidenav .mat-list-item.selected {
+    background-color: #2D5F82;  /* Azul más oscuro para el item seleccionado */
+  }
+  
+  /* Contenido principal */
+  .content {
+    margin-left: 0px;  /* No hay margen para pegar al contenido a la barra lateral */
+    padding: 30px;
+    background-color: #FFFFFF;  /* Fondo blanco */
+    min-height: 100vh;  /* Asegura que ocupe toda la altura */
+  }

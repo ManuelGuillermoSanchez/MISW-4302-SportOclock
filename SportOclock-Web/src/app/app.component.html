@@ -1,11 +1,24 @@
-<ul class="nav flex-column">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Rutinas</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Historial</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Ajustes</a>
-  </li>
-</ul>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" opened class="sidenav">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/rutinas" [class.selected]="isSelected('/rutinas')">
+        <mat-icon>alarm_on</mat-icon>
+        Rutinas
+      </a>
+      <a mat-list-item routerLink="/historial" [class.selected]="isSelected('/historial')">
+        <mat-icon>history</mat-icon>
+        Historial
+      </a>
+      <a mat-list-item routerLink="/ajustes" [class.selected]="isSelected('/ajustes')">
+        <mat-icon>settings</mat-icon>
+        Ajustes
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
