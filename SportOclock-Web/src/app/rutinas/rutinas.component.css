@@ -55,6 +55,11 @@
 
 .delete-btn {
   background-color: #F40016;  /* Rojo para eliminar */
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .delete-btn:hover {

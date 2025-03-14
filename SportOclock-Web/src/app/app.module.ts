@@ -11,11 +11,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { AppComponent } from './app.component';
 import { RutinasComponent } from './rutinas/rutinas.component';
 import { AppRoutingModule } from './app.routes';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ConfirmDeleteComponent } from './confirm-delete/confirm-delete.component'; // Asegúrate de que la ruta sea correcta
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    RutinasComponent
+    RutinasComponent,
+    ConfirmDeleteComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,8 @@ import { AppRoutingModule } from './app.routes';
     MatIconModule,
     MatButtonModule,
     MatToolbarModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
