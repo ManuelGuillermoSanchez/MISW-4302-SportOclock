@@ -1,0 +1,49 @@
+.form-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #F4F7FE;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+  }
+  
+  input[type="text"],
+  input[type="time"],
+  select,
+  input[type="range"] {
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button.cancelar-btn {
+    background-color: #F40016;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button.crear-btn {
+    background-color: #2DB67E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  

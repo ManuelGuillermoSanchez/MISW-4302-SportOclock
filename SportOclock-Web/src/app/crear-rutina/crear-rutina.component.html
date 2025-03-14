@@ -1,0 +1,49 @@
+<div class="form-container">
+    <h2>Crear rutina</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Escribe tu nombre">
+  
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora">
+  
+      <label for="dias">Días:</label>
+      <div class="dias">
+        <input type="checkbox" id="lunes"> L
+        <input type="checkbox" id="martes"> M
+        <input type="checkbox" id="miercoles"> X
+        <input type="checkbox" id="jueves"> J
+        <input type="checkbox" id="viernes"> V
+        <input type="checkbox" id="sabado"> S
+        <input type="checkbox" id="domingo"> D
+      </div>
+  
+      <div class="alertas">
+        <h3>Alertas</h3>
+        <label for="sonido">Sonido:</label>
+        <input type="checkbox" id="sonido">
+  
+        <label for="volumen">Volumen:</label>
+        <input type="range" id="volumen" min="0" max="100">
+  
+        <label for="timbre">Timbre:</label>
+        <select id="timbre">
+          <option>Seleccionar timbre</option>
+        </select>
+      </div>
+  
+      <div class="ejercicios">
+        <h3>Ejercicio</h3>
+        <div class="ejercicio">
+          <label for="ejercicio">Ejercicio #1:</label>
+          <input type="time" id="duracion" value="00:30:00">
+        </div>
+      </div>
+  
+      <div class="form-actions">
+        <button type="button" class="cancelar-btn">Cancelar</button>
+        <button type="submit" class="crear-btn">Crear</button>
+      </div>
+    </form>
+  </div>
+  
