@@ -1,27 +1,39 @@
-# SportOclockWeb
+# Sport O'Clock - Gestión de Rutinas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+# Aplicación WEB
 
-## Development server
+Este proyecto es una aplicación web para gestionar rutinas deportivas, donde puedes crear, editar, eliminar y visualizar rutinas diarias. Está desarrollado con **Angular** y usa **Material Design** para los componentes visuales.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Requisitos
 
-## Code scaffolding
+Antes de empezar, asegúrate de tener las siguientes herramientas instaladas en tu máquina:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Node.js** (versión 14 o superior)  
+  [Descargar Node.js](https://nodejs.org/)
 
-## Build
+- **Angular CLI**  
+  Si aún no lo tienes instalado, puedes instalar Angular CLI globalmente con el siguiente comando:
+  ```bash
+  npm install -g @angular/cli
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Clonar repositorio**
+    ```bash
+    git clone https://github.com/ManuelGuillermoSanchez/MISW-4302-SportOclock.git
 
-## Running unit tests
+- **Navega al directorio del proyecto**
+Accede al directorio del proyecto clonado:
+    ```bash 
+    cd MISW-4302-SportOclock
+    cd SportOclock-Web
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Instalar dependencias**
+Una vez que estés dentro del directorio del proyecto, instala las dependencias necesarias ejecutando:
+    ```bash 
+   npm install
 
-## Running end-to-end tests
+- **Ejecutar el proyecto**
+Para iniciar el servidor de desarrollo y ver la aplicación en tu navegador, ejecuta:
+    ```bash 
+   ng serve
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
