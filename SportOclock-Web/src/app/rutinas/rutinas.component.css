@@ -6,12 +6,12 @@
 }
 
 .card {
-  background-color: #F4F7FE;  /* Azul claro para las cards */
-  padding: 10px 15px;  /* Reduce el padding para hacer la card más compacta */
+  background-color: #F4F7FE;
+  padding: 10px 15px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  height: auto;  /* Permite que la altura se ajuste automáticamente */
-  min-height: 120px;  /* Establece un tamaño mínimo para la tarjeta */
+  height: auto;
+  min-height: 120px;
 }
 
 .card-header {
@@ -41,20 +41,20 @@
 }
 
 .edit-btn, .delete-btn {
-  background-color: #2DB67E;  /* Verde para editar */
+  background-color: #2DB67E;
   color: white;
-  padding: 5px 10px;  /* Reduce el padding de los botones */
+  padding: 5px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .edit-btn:hover {
-  background-color: #1A8C4D;  /* Verde más oscuro para hover */
+  background-color: #1A8C4D; 
 }
 
 .delete-btn {
-  background-color: #F40016;  /* Rojo para eliminar */
+  background-color: #F40016;
   color: white;
   padding: 5px 15px;
   border: none;
@@ -63,24 +63,24 @@
 }
 
 .delete-btn:hover {
-  background-color: #B20010;  /* Rojo más oscuro para hover */
+  background-color: #B20010;
 }
 
 /* Estilo del botón Crear */
 .crear-btn {
-  font-size: 14px;  /* Tamaño más pequeño para el botón */
-  padding: 8px 20px;  /* Reduce el padding para hacerlo más pequeño */
-  background-color: #000000;  /* Negro para el botón */
+  font-size: 16px;
+  padding: 10px 30px;
+  background-color: #0000FE;
   color: white;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  position: fixed;  /* Fija el botón en la pantalla */
-  bottom: 20px;  /* A 20px desde el fondo de la pantalla */
-  right: 20px;  /* A 20px desde la parte derecha de la pantalla */
-  z-index: 1000;  /* Asegura que el botón esté por encima de otros elementos */
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 1000;
 }
 
-/* Efecto hover en el botón Crear */
 .crear-btn:hover {
-  background-color: #333333;  /* Gris oscuro al pasar el ratón */
+  background-color: #3333ff21; 
+  color: black; 
 }
