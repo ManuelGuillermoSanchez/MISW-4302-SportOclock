@@ -1,0 +1,74 @@
+<div class="form-container">
+  <h2>Crear rutina</h2>
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+    <label for="hora">Hora:</label>
+    <input type="time" id="hora">
+
+    <label for="dias">Días:</label>
+    <div class="dias">
+      <input type="checkbox" id="lunes"> L
+      <input type="checkbox" id="martes"> M
+      <input type="checkbox" id="miercoles"> X
+      <input type="checkbox" id="jueves"> J
+      <input type="checkbox" id="viernes"> V
+      <input type="checkbox" id="sabado"> S
+      <input type="checkbox" id="domingo"> D
+    </div>
+
+    <div class="alertas">
+      <h3>Alertas</h3>
+      
+      <div class="alert-item">
+          <label for="sonido">Sonido:</label>
+          <input type="checkbox" id="sonido" name="sonido">
+      </div>
+  
+      <div class="alert-item">
+          <label for="volumen">Volumen:</label>
+          <input type="range" id="volumen" name="volumen" min="0" max="100">
+      </div>
+  
+      <div class="alert-item">
+          <label for="timbre">Timbre:</label>
+          <select id="timbre" name="timbre">
+              <option value="default">Seleccionar timbre</option>
+              <!-- Opciones de timbre -->
+          </select>
+      </div>
+    </div>
+  
+    <table class="tabla-ejercicios">
+      <thead>
+        <tr>
+          <th>Ejercicio</th>
+          <th>Duración</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ejercicio #1</td>
+          <td>12:30 a.m.</td>
+          <td class="acciones">
+            <button class="eliminar-btn" (click)="openDeleteDialog()"><i class="fa fa-trash"></i></button>
+            <button class="agregar-btn"><i class="fa fa-plus"></i></button>
+          </td>
+        </tr>
+        <!-- Puedes agregar más filas aquí -->
+      </tbody>
+    </table>
+
+    <div class="form-actions">
+      <!-- Contenedor de botones -->
+      <div class="buttons-container">
+        <!-- Botón Cancelar -->
+        <button (click)="cancelar()" class="cancelar-btn">Cancelar</button>
+        <!-- Botón Crear -->
+        <button (click)="crear()" class="crear-btn">Crear</button>
+          </div>
+    </div>
+  </form>
+</div>

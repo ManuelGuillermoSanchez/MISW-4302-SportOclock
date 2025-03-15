@@ -1,0 +1,34 @@
+<mat-sidenav-container class="example-container" style="height: 100vh;">
+  <!-- Barra lateral -->
+  <mat-sidenav #sidenav mode="side" opened class="sidenav">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/rutinas" [class.selected]="isSelected('/rutinas')">
+        <mat-icon>alarm_on</mat-icon>
+        Rutinas
+      </a>
+      <a mat-list-item routerLink="/historial" [class.selected]="isSelected('/historial')">
+        <mat-icon>history</mat-icon>
+        Historial
+      </a>
+      <a mat-list-item routerLink="/ajustes" [class.selected]="isSelected('/ajustes')">
+        <mat-icon>settings</mat-icon>
+        Ajustes
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Contenido principal -->
+  <mat-sidenav-content>
+    <!-- Toolbar superior (opcional) -->
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Sport O'Clock</span>
+    </mat-toolbar>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

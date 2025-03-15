@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlue">#0000FE</color>
+    <color name="colorBlueDark">#488BB7</color>
+    <color name="colorGray">#999999</color>
+    <color name="colorGrayDark">#6F8696</color>
+    <color name="colorGreen">#2DB67E</color>
+    <color name="colorLightBlue">#EAF7FF</color>
+    <color name="colorRed">#F40016</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="teal_200">#03DAC5</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="accept_button">Aceptar</string>
+    <string name="app_name">SportOclock</string>
+    <string name="error_label">Completa este campo</string>
+    <string name="goggle_confirmation">¡Has iniciado sesión correctamente con Google!</string>
+    <string name="goggle_iniciar_sesion">Iniciar con Google</string>
+    <string name="input_email">Correo electrónico</string>
+    <string name="input_password">Contraseña</string>
+    <string name="login_button">Volver a Iniciar sesión</string>
+    <string name="logout_button">Cerrar sesión</string>
+    <string name="placeholder_iniciar_sesion">Escribe tu usuario</string>
+    <string name="recover_password">Recuperar contraseña</string>
+    <string name="send_button">Enviar</string>
+    <string name="title_crear_cuenta">Crear cuenta</string>
+    <string name="title_dashboard">Historial</string>
+    <string name="title_email">Escribe tu correo</string>
+    <string name="title_home">Rutinas</string>
+    <string name="title_iniciar_sesion">Iniciar sesión</string>
+    <string name="title_inteligent_notification">Notificación inteligente</string>
+    <string name="title_name_user">Nombre de usuario</string>
+    <string name="title_notifications">Ajustes</string>
+    <string name="title_password">Escribe tu contraseña</string>
+    <style name="BodyText">
+        <item name="android:fontFamily">@font/orbitron_bold</item> 
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SubtitleText">
+        <item name="android:fontFamily">@font/sans_pro_regular</item> 
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">25sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Theme.SportOclock." parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/manrope_regular</item>  
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+    <style name="TitleText">
+        <item name="android:fontFamily">@font/manrope_bold</item> 
+        <item name="android:textSize">36sp</item>
+        <item name="android:lineSpacingExtra">45sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
