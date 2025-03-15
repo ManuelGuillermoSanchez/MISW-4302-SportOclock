@@ -7,14 +7,17 @@ import { MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./confirm-delete.component.css']
 })
 export class ConfirmDeleteComponent {
+  constructor(public dialogRef: MatDialogRef<ConfirmDeleteComponent>) {}
 
-  constructor(public dialogRef: MatDialogRef<ConfirmDeleteComponent>) { }
-
-  onCancel(): void {
-    this.dialogRef.close(false);
+  // Método para confirmar eliminación
+  onConfirm(): void {
+    console.log('Confirmado: eliminar ejercicio');
+    this.dialogRef.close(true);  // Cierra el modal y devuelve "true"
   }
 
-  onConfirm(): void {
-    this.dialogRef.close(true);
+  // Método para cancelar
+  onCancel(): void {
+    console.log('Cancelado: no eliminar');
+    this.dialogRef.close(false);  // Cierra el modal y devuelve "false"
   }
 }

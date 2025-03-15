@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Importa BrowserAnimationsModule
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,7 +11,7 @@ import { AppComponent } from './app.component';
 import { RutinasComponent } from './rutinas/rutinas.component';
 import { AppRoutingModule } from './app.routes';
 import { MatDialogModule } from '@angular/material/dialog';
-import { ConfirmDeleteComponent } from './confirm-delete/confirm-delete.component'; // Asegúrate de que la ruta sea correcta
+import { ConfirmDeleteComponent } from './confirm-delete/confirm-delete.component';
 
 
 
@@ -24,7 +23,7 @@ import { ConfirmDeleteComponent } from './confirm-delete/confirm-delete.componen
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,  // Asegúrate de agregarlo aquí
+    BrowserAnimationsModule,
     MatSidenavModule,
     MatListModule,
     MatIconModule,
