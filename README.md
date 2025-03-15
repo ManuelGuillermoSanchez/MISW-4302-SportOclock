@@ -2,7 +2,25 @@
 
 # Aplicación Mobile
 
-## Requisitos
+## Instalación y ejecucíón con APK
+
+1. **Descarga el archivo APK**  
+   Asegúrate de tener el archivo `.apk` en tu dispositivo (puede ser en la carpeta de Descargas o en otra ubicación).
+
+2. **Habilita la instalación desde fuentes desconocidas**  
+   - En la mayoría de los dispositivos Android modernos, se te pedirá automáticamente permitir la instalación cuando intentes abrir el APK.  
+   - Si tu dispositivo es más antiguo, es posible que debas ir a **Ajustes > Seguridad** y activar la opción **Orígenes desconocidos** (o algo similar).
+
+3. **Instala la aplicación**  
+   - Localiza el archivo APK en tu dispositivo (usando un explorador de archivos o la sección de descargas).  
+   - Toca el archivo `.apk`.  
+   - Presiona **Instalar** y sigue las instrucciones en pantalla.
+
+4. **Abre la aplicación**  
+   - Una vez instalada, busca el ícono de **Nombre de la Aplicación** en tu lista de aplicaciones.  
+   - ¡Listo! Ya puedes iniciar y comenzar a usar la aplicación.
+
+## Ejecución y Requisitos en Andriod estudio
 
 Antes de comenzar, asegúrate de tener las siguientes herramientas instaladas en tu máquina:
 
