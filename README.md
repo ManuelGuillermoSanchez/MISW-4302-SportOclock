@@ -20,8 +20,9 @@ La aplicación es compatible con dispositivos que ejecuten **Android 5.0 (Lollip
 ## Clonar el repositorio
 
 Clona este repositorio en tu máquina local con el siguiente comando:
-    ```bash
+  ```bash
     git clone https://github.com/ManuelGuillermoSanchez/MISW-4302-SportOclock.git
+  ```
 
 
 ## Abrir el proyecto en Android Studio
